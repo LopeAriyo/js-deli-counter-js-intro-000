@@ -1,11 +1,24 @@
-function takeANumber(theLine, newCustomer){
+/*function takeANumber(theLine, newCustomer){
 
     var placeInLine = theLine.length + 1 // evaluates the current length of line and assigns the place in line to the back of the line
 
     theLine.push (newCustomer) // adds the new customer to the end of the queue
     return ("Welcome, " + newCustomer + ". You are number " + placeInLine + " in line.")
 
+}*/
+
+var ticketNumber = 0 
+
+function takeANumber (theLine){
+
+  ticketNumber++
+  
+  theLine.push(ticketNumber)
+  return ("Welcome, your ticket number is " + ticketNumber)
+  
 }
+
+
 
 function nowServing(theLine){
 
