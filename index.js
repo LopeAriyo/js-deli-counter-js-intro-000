@@ -7,15 +7,15 @@
 
 }*/
 
-var ticketNumber = 0 
+var ticketNumber = 0
 
 function takeANumber (theLine){
 
   ticketNumber++
-  
+
   theLine.push(ticketNumber)
   return ("Welcome, your ticket number is " + ticketNumber)
-  
+
 }
 
 
